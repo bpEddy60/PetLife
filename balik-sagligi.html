@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">🏥 Balık Sağlığı ve Teşhis Rehberi</h1>
+    <p class="text-muted lead">Sualtı dostlarımızın sağlığını koruyun; en yaygın balık hastalıkları, belirtileri, karantina ve güvenli tedavi yöntemleri.</p>
+  </div>
+
+  <!-- ŞABLON 1: En Yaygın 3 Balık Hastalığı Kartı -->
+  <h3 class="fw-bold mb-4 text-secondary">🦠 En Sık Karşılaşılan Akvaryum Hastalıkları</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <!-- Beyaz Benek -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-danger">⚪ Beyaz Benek (Ich)</h5>
+          <p class="card-text text-muted small"><strong>Neden:</strong> Ani sıcaklık değişimlerinin tetiklediği bir parazittir. Balığın gövdesine ve yüzgeçlerine tuz taneleri serpilmiş gibi beyaz noktalar belirir. <br><strong>Tedavi:</strong> Akvaryum ısısı kademeli olarak 28-30°C'ye yükseltilir ve parazit döngüsünü kırmak için uygun ilaç tedavisi (Metilen mavisi) uygulanır.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Kuyruk Erimesi -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-danger">🧬 Yüzgeç ve Kuyruk Erimesi</h5>
+          <p class="card-text text-muted small"><strong>Neden:</strong> Tamamen kirli su, yüksek amonyak ve bakteriyel enfeksiyonlardan kaynaklanır. Yüzgeç uçları yırtılır, şeffaflığını kaybeder ve geriye doğru erimeye başlar. <br><strong>Tedavi:</strong> Su kalitesini artırmak için hemen %30 su değişimi yapılır. Kaya tuzu veya antibakteriyel balık ilaçları ile tedavi desteklenir.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Hava Kesesi Sorunu -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-danger">🎈 Hava Kesesi (Yüzme Bloke)</h5>
+          <p class="card-text text-muted small"><strong>Neden:</strong> Genellikle yanlış besleme, kabızlık veya kalitesiz kuru yemlerin balığın içinde şişmesiyle oluşur. Balık dengesini sağlayamaz; ters döner veya dibe çöker. <br><strong>Tedavi:</strong> Yemleme 2 gün boyunca tamamen kesilir (oruç). Ardından sindirimi rahatlatmak için haşlanmış, kabuğu soyulmuş bezelye içi verilir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- ŞABLON 2: Hastalık Belirtileri Check-listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100">
+        <h4 class="fw-bold text-dark mb-4">🩺 Balığınızın Hasta Olduğunu Nasıl Anlarsınız?</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🧱 <strong>Dekorlara Sürtünme:</strong> Balıkların kaya veya kumlara gövdesini hızlıca sürtmesi (kaşınma hareketi), dış parazitlerin veya beyaz benek hastalığının ilk habercisidir.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 📐 <strong>Yüzgeçleri Kısmak:</strong> Sağlıklı bir balık yüzgeçlerini dik ve açık tutar. Eğer yüzgeçlerini gövdesine tamamen yapıştırıp hareketsiz duruyorsa ciddi bir stres veya hastalık altındadır.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🚪 <strong>Köşelere Saklanma ve İştahsızlık:</strong> Yeme gelmeyen, akvaryumun en karanlık köşesinde veya filtre arkasında sürekli sabit duran balık fiziksel olarak çökmüş demektir.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ŞABLON 3: Sağlık Konusunda Doğru Bilinen Yanlışlar -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Tedavide Doğru Bilinen Yanlışlar</h4>
+        
+        <!-- Yanlış 1 -->
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: "Ana akvaryuma koruyucu olsun diye her hafta ilaç/kimyasal damlatılmalıdır"</h6>
+          <p class="mb-0 small">Ana akvaryuma durduk yere damlatılan her ilaç (özellikle metilen mavisi veya antibiyotikler), filtredeki suyu temizleyen tüm yararlı bakterileri tamamen öldürür. Bu da azot döngüsünü sıfırlayarak suyun zehirli hale gelmesine ve tüm balıkların ölmesine yol açar.</p>
+        </div>
+
+        <!-- Yanlış 2 -->
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: Karantina Akvaryumu Hayat Kurtarır</h6>
+          <p class="mb-0 small text-dark">Hastalık fark edildiği an, hasta balık kepçeyle küçük, ayrı bir tanka (karantina akvaryumuna) alınmalıdır. İlaç tedavisi sadece bu küçük tankta uygulanmalıdır. Böylece hem ilaçtan tasarruf edilir hem de ana akvaryumun biyolojik dengesi korunmuş olur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

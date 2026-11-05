@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kedi Eğitim Rehberi | PetLife</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">🎓 Kedi Eğitim Rehberi</h1>
+    <p class="text-muted lead">Dostunuzla bağınızı güçlendirecek pozitif ve etkili eğitim yöntemleri.</p>
+  </div>
+
+  <h3 class="fw-bold mb-4 text-secondary">⏳ Eğitim Süreçleri</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <span class="fs-3 me-2">🚽</span>
+            <h5 class="card-title fw-bold m-0 text-success">Tuvalet Eğitimi</h5>
+          </div>
+          <p class="card-text text-muted">Kediniz eve gelir gelmez kum kabının yerine alıştırılmalıdır. Yemeklerden ve uykudan hemen sonra kumu koklatmak süreci hızlandırır.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <span class="fs-3 me-2">🗣️</span>
+            <h5 class="card-title fw-bold m-0 text-info">İsme Alıştırma</h5>
+          </div>
+          <p class="card-text text-muted">Kısa ve net bir isim seçin. Ona her seslendiğinizde ödül maması vererek ismini pozitif bir durumla bağdaştırmasını sağlayın.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <span class="fs-3 me-2">🐾</span>
+            <h5 class="card-title fw-bold m-0 text-primary">Sosyalleşme</h5>
+          </div>
+          <p class="card-text text-muted">Yabancı insanlara ve seslere alışması için erken dönemde sevgiyle yaklaşın. Korktuğu anlarda zorlamadan üzerine gidin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100">
+        <h4 class="fw-bold text-dark mb-4">🛍️ Eğitim İçin Gerekli Malzemeler</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> Lezzetli Ödül Mamaları (Sadece eğitimde verilecek)
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> Clicker (Sesle komut öğretme aracı)
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> Sağlam ve Dik Durabilen Tırmalama Tahtası
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> Dikkat Dağıtıcı Zilli ve Tüylü Oyuncaklar
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> Kedi Otu (Tırmalama alanına alıştırmak için)
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Eğitimde Doğru Bilinen Yanlışlar</h4>
+        
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: Kedilere Bağırmak veya Ceza Vermek</h6>
+          <p class="mb-0 small">Kediler cezayı anlamaz, sadece sizden korkarlar. İstemediğiniz bir şey yaptığında bağırmak yerine el çırparak dikkatini dağıtın.</p>
+        </div>
+
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: Eğitim Süresi</h6>
+          <p class="mb-0 small text-dark">Kedilerin odaklanma süresi çok kısadır. Bir eğitim seansını asla 5-10 dakikadan uzun tutmayın, aksi takdirde sıkılıp uzaklaşacaklardır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

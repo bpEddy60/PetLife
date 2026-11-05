@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuş Beslenme Rehberi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">🍖 Kuş Beslenme Rehberi</h1>
+    <p class="text-muted lead">Kanatlı dostunuzun canlı renklere, güçlü tüylere ve yüksek enerjiye sahip olması için doğru beslenme formülleri.</p>
+  </div>
+
+  <!-- ŞABLON 1: Beslenme Grupları Kartları -->
+  <h3 class="fw-bold mb-4 text-secondary">🍼 Temel Besin Kaynakları</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <!-- Karışık Yemler -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-success">🌾 Kaliteli Tohum & Yemler</h5>
+          <p class="card-text text-muted small">Kuşunuzun türüne uygun (muhabbet, kanarya, papağan) ak darı, sarı darı ve aspur içeren taze, tozsuz karışık ambalajlı yemler beslenmenin temel direğidir. Açıkta satılan yemlerden parazit riski nedeniyle kaçınılmalıdır.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Ek Gıdalar -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-info">🥦 Taze Sebze & Meyveler</h5>
+          <p class="card-text text-muted small">Haftada 2-3 kez mevsimine uygun iyice yıkanmış ve kurulanmış elma, havuç, brokoli ve maydanoz sapı gibi ek gıdalar verilmelidir. Sebzeler kuşların vitamin ve mineral deposudur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Enerji ve Kondisyon -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-primary">🥚 Kızıştırma & Yumurta Maması</h5>
+          <p class="card-text text-muted small">Özellikle tüy dökme dönemlerinde ve üreme evrelerinde kuşa ekstra protein sağlamak amacıyla haşlanmış yumurta sarısı, havuç ve bebe bisküvisi ezilerek ev yapımı taze mama sunulmalıdır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- ŞABLON 2: Tehlikeli Yiyecekler Listesi Check-listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-danger mb-4">🚨 Asla Verilmemesi Gerekenler</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0 text-muted small">
+            ❌ <strong>Avokado:</strong> İçerdiği 'persin' adlı madde kuşlar için son derece zehirlidir ve ani kalp durmalarına neden olur.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0 text-muted small">
+            ❌ <strong>Elma Çekirdeği:</strong> Elmanın kendisi faydalıdır ancak çekirdeklerinde bulunan siyanür, minik kuşları saniyeler içinde zehirleyebilir.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0 text-muted small">
+            ❌ <strong>Çikolata, Şeker ve Tuz:</strong> Kuşların metabolizması tuzu ve yapay şekerleri işleyemez; böbrekleri çok hızlı iflas eder.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0 text-muted small">
+            ❌ <strong>Ekmek ve Hamur İşleri:</strong> Kuşun kursağında şişerek mantar enfeksiyonlarına (kursak mantarı) ve ciddi sindirim tıkanmalarına yol açar.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ŞABLON 3: Beslenmede Doğru Bilinen Yanlışlar -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Beslenmede Doğru Bilinen Yanlışlar</h4>
+        
+        <!-- Yanlış 1 -->
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: "Kuşun kafesinde yem olması onun aç kalmayacağı anlamına gelir"</h6>
+          <p class="mb-0 small">Kuşlar yemlerin sadece içini yer ve kabuklarını tekrar yem kabının içine bırakırlar. Dışarıdan bakıldığında kap dolu görünebilir ama aslında tamamen **boş kabuklardan** ibaret olabilir. Kap her gün üflenerek temizlenmelidir.</p>
+        </div>
+
+        <!-- Yanlış 2 -->
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: Suya Vitamin Desteği</h6>
+          <p class="mb-0 small text-dark">Kuş sularına damlatılan multivitaminler suyun içinde en fazla 24 saat bakteri üretmeden kalabilir. Vitamini damlattıktan tam 24 saat sonra suluk mutlaka iyice yıkanıp taze suyla doldurulmalıdır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

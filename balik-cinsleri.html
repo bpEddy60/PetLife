@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akvaryum Balık Cinsleri Ansiklopedisi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">👑 Akvaryum Balık Cinsleri Ansiklopedisi</h1>
+    <p class="text-muted lead">Su sertliği, mizaçları ve görkemli renkleriyle akvaryum dünyasının en popüler yüzücülerini keşfedin.</p>
+  </div>
+
+  <!-- ŞABLON 1: Kategori Sekmeleri (Nav-Pills) -->
+  <ul class="nav nav-pills justify-content-center mb-5 shadow-sm p-2 bg-white rounded-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active me-2" id="pills-bariscil-tab" data-bs-toggle="pill" data-bs-target="#pills-bariscil" type="button" role="tab">🐠 Barışçıl & Popüler Türler</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link me-2" id="pills-bolgeci-tab" data-bs-toggle="pill" data-bs-target="#pills-bolgeci" type="button" role="tab">👑 Karakterli & Bölgeci Türler</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-caliskan-tab" data-bs-toggle="pill" data-bs-target="#pills-caliskan" type="button" role="tab">🧼 Akvaryumun Çalışkanları</button>
+    </li>
+  </ul>
+
+  <!-- Sekme İçerikleri (Tab Content) -->
+  <div class="tab-content" id="pills-tabContent">
+    
+    <!-- 1. SEKME: BARIŞÇIL & POPÜLER TÜRLER (3 Kart) -->
+    <div class="tab-pane fade show active" id="pills-bariscil" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Japon Balığı -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="JaponBalıgı (Goldfish).jpg" class="card-img-top cins-img" alt="Japon Balığı" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Japon Balığı (Goldfish)</h5>
+              <p class="text-muted small mb-0"><strong>Mizaç:</strong> Barışçıl / Sakin <br><strong>Su Derecesi:</strong> 18-24°C (Soğuk su sever) <br>Akvaryum hobisinin en dayanıklı ve en eski türüdür. Kumları ağzına alıp püskürtmeyi çok severler; geniş hacimli akvaryumlara ihtiyaç duyarlar.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Lepistes -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="Lepistes(Guppy).jpg" class="card-img-top cins-img" alt="Lepistes" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Lepistes (Guppy)</h5>
+              <p class="text-muted small mb-0"><strong>Mizaç:</strong> Çok Barışçıl <br><strong>Su Derecesi:</strong> 22-28°C <br>Erkeklerinin yelpaze gibi rengarenk kuyrukları vardır. Canlı doğuranlar sınıfındadırlar, çok hızlı ürerler ve bitkili tropikal akvaryumlar için mükemmel bir seçimdir.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Melek Balığı -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="MelekBalıgı(Angelfish).png" class="card-img-top cins-img" alt="Melek Balığı" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Melek Balığı (Angelfish)</h5>
+              <p class="text-muted small mb-0"><strong>Mizaç:</strong> Sakin ama Avcı <br><strong>Su Derecesi:</strong> 24-28°C <br>Yassı, dikine uzayan asil gövdeleri ve uzun süzülen yüzgeçleriyle bilinirler. Sakindirler ancak ağızlarına sığabilecek neon tetra gibi çok küçük balıkları avlayabilirler.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. SEKME: KARAKTERLİ & BÖLGECİ TÜRLER (2 Kart) -->
+    <div class="tab-pane fade" id="pills-bolgeci" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+        <!-- Beta -->
+        <div class="col" style="max-width: 400px;">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="Beta(SiyamSavaşçısı).jpg" class="card-img-top cins-img" alt="Beta Balığı" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-info">Beta (Siyam Savaşçısı)</h5>
+              <p class="text-muted small mb-0"><strong>Mizaç:</strong> Agresif / Bölgeci <br><strong>Su Derecesi:</strong> 24-28°C <br>Labirent organı sayesinde su yüzeyinden doğrudan hava soluyabilir. Muhteşem kuyruklara sahiptir. İki erkek yan yana geldiğinde ölümüne savaşır, bu yüzden kesinlikle **tek başına** bakılmalıdır.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Yunus Çiklet -->
+        <div class="col" style="max-width: 400px;">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="YunusCiklet(Malawi).webp" class="card-img-top cins-img" alt="Yunus Çiklet" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-info">Yunus Çiklet (Malawi)</h5>
+              <p class="text-muted small mb-0"><strong>Mizaç:</strong> Bölgeci / Hareketli <br><strong>Su Derecesi:</strong> 24-26°C <br>Büyüdükçe kafalarında oluşan yunus benzeri kafa hörgücü ile ünlüdürler. Kayalık akvaryumları ve sert suları severler. Ağızda kuluçka yaparak yavrularını büyütürler.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. SEKME: AKVARYUMUN ÇALIŞKANLARI (2 Kart) -->
+    <div class="tab-pane fade" id="pills-caliskan" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+        <!-- Cüce Vatoz -->
+        <div class="col" style="max-width: 400px;">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="CuceVatoz(Ancistrus).jpg" class="card-img-top cins-img" alt="Cüce Vatoz" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary">Cüce Vatoz (Ancistrus)</h5>
+              <p class="text-muted small mb-0"><strong>Mizaç:</strong> Barışçıl / Utangaç <br><strong>Görevi:</strong> Yosun Temizleyici <br>Vantuzlu ağız yapısıyla akvaryum camlarında, kayalarda ve dekorlarda oluşan yeşil yosunları kazıyarak beslenir. Akvaryumun cam temizliğini üstlenen gizli kahramandır.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Komando Çöpçü -->
+        <div class="col" style="max-width: 400px;">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="KomandoCöpcü(Corydoras).jpg" class="card-img-top cins-img" alt="Komando Çöpçü" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary">Komando Çöpçü (Corydoras)</h5>
+              <p class="text-muted small mb-0"><strong>Mizaç:</strong> Çok Barışçıl / Sürü <br><strong>Görevi:</strong> Taban Temizleyici <br>Bıyıklarıyla tabandaki kumları sürekli tarayarak diğer balıklardan arta kalan ve dibe çöken yemleri bulup yer. Suyu amonyak patlamasından korurlar. Sürü halinde yaşamayı severler.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Sayfa Altındaki Şablon Bölümleri -->
+  <div class="row mt-5">
+    <!-- ŞABLON 2: Doğru Balık Seçimi Check-listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100">
+        <h4 class="fw-bold text-dark mb-4">🤝 Uyumlu Balık Seçimi (Karma Akvaryum)</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🌡️ <strong>Su Parametreleri Uyumu:</strong> Aynı akvaryuma koyacağınız balıkların sıcaklık ve pH ihtiyaçları aynı olmalıdır. (Örn: Soğuk su seven Japon balığı ile sıcak su seven Lepistes yan yana yaşayamaz.)
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🥩 <strong>Mizaç ve Karakter Dengesi:</strong> Agresif Çiklet türleri ile narin gövdeli barışçıl Lepistesler aynı akvaryuma konursa, çikletler diğer balıklara zarar verir.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 📐 <strong>Katman Paylaşımı:</strong> Karma bir akvaryumda hem üst yüzeyde yüzen (Lepistes), hem orta seviyede gezen (Melek), hem de tabanda yaşayan (Çöpçü, Vatoz) balıklar seçilerek dengeli bir popülasyon kurulmalıdır.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ŞABLON 3: Akvaryum Türleri Hakkında Doğru Bilinen Yanlışlar -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Türler Hakkında Doğru Bilinen Yanlışlar</h4>
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: "Vatoz ve Çöpçü balıkları akvaryumdaki pislikleri ve dışkıları yer"</h6>
+          <p class="mb-0 small">Bu inanılmaz yaygın ve yanlış bir efsanedir. Hiçbir balık başka bir balığın dışkısını yemez. Çöpçüler sadece dibe düşen taze **yem artıklarıyla**, vatozlar ise **yosunlarla** beslenir. Onlar da tıpkı diğer balıklar gibi düzenli dip çekimine ve normal balık yemine ihtiyaç duyarlar.</p>
+        </div>
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: Betalar Küçük Kaplarda Yaşatılmamalıdır</h6>
+          <p class="mb-0 small text-dark">Betalar petshoplarda bardaklarda satıldığı için fanusta veya ufacık kaplarda yaşayabileceği zannedilir. Oysa ki betaların renklerini tam gösterebilmesi ve sağlıklı kalabilmesi için ısıtıcılı ve kendilerine ait en az 15-20 litrelik bitkili akvaryumlara ihtiyaçları vardır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

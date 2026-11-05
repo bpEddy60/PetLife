@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kedi Beslenme Rehberi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">🐈 Kedi Beslenme Rehberi</h1>
+    <p class="text-muted lead">Minik dostunuzun sağlıklı bir sindirim sistemine ve parlak tüylere sahip olması için doğru beslenme formülleri.</p>
+  </div>
+
+  <!-- Yaş Gruplarına Göre Beslenme -->
+  <h3 class="fw-bold mb-4 text-secondary">🍼 Dönemsel İhtiyaçlar</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <!-- Yavru Kedi -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-success">Yavru Dönemi (0-12 Ay)</h5>
+          <p class="card-text text-muted small">Kas ve kemik gelişimi için yüksek protein ve taurin içeren özel yavru (kitten) mamaları kullanılmalıdır. Enerjileri çok yüksek olduğu için gün içinde sık sık ve küçük porsiyonlarla beslenmelidirler.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Yetişkin Kedi -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-info">Yetişkin Dönemi (1-7 Yaş)</h5>
+          <p class="card-text text-muted small">Kısırlaştırılmış olup olmamalarına göre mama seçimi hayati önem taşır. Kısır kedilerde taş oluşumunu ve kilo alımını önlemek için özel "Sterilised" mamalar tercih edilmeli, porsiyon kontrolü yapılmalıdır.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Yaşlı Kedi -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-primary">Yaşlı Dönemi (7+ Yaş)</h5>
+          <p class="card-text text-muted small">Böbrekleri yormayacak, sindirimi kolay ve eklem sağlığını destekleyen yaşlı (senior) mamalarına geçilmelidir. Diş hassasiyeti artabileceği için yaş mama oranı biraz artırılabilir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Tehlikeli Yiyecekler Listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-danger mb-4">🚨 Asla Verilmemesi Gerekenler</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0 px-0 text-muted small">❌ <strong>Süt ve Süt Ürünleri:</strong> Sanılanın aksine yetişkin kedilerin laktoza alerjisi vardır; kusma ve şiddetli ishale yol açar.</li>
+          <li class="list-group-item border-0 px-0 text-muted small">❌ <strong>Soğan ve Sarımsak:</strong> Kedilerde çok hızlı bir şekilde kırmızı kan hücrelerini parçalayarak ölümcül anemiye neden olur.</li>
+          <li class="list-group-item border-0 px-0 text-muted small">❌ <strong>Çikolata ve Tatlandırıcılar:</strong> İçindeki maddeler kedilerin metabolizması tarafından sindirilemez, doğrudan zehirler.</li>
+          <li class="list-group-item border-0 px-0 text-muted small">❌ <strong>Çiğ Et ve Balık:</strong> Parazit ve zararlı bakteriler barındırır. Ayrıca çiğ balık, kediler için hayati olan B1 vitaminini yok eder.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kedi Besleme Tüyoları -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">💡 Kedilerde Besleme İpuçları</h4>
+        <p class="text-muted small">💧 <strong class="text-dark">Kuru & Yaş Mama Dengesi:</strong> Kediler doğası gereği az su içerler. Sadece kuru mama ile beslemek idrar yolu hastalıklarına davetiye çıkarır. Haftada en az 2-3 kez kaliteli yaş mama verilmelidir.</p>
+        <p class="text-muted small">⛲ <strong class="text-dark">Akan Su Tercihi:</strong> Kediler durgun suları taze bulmazlar. Mama kabının hemen yanına su koymak yerine evin farklı yerlerine su kapları yerleştirmek veya su pınarı kullanmak su tüketimini artırır.</p>
+        <p class="text-muted small">🌱 <strong class="text-dark">Kedi Çimi:</strong> Kendilerini temizlerken yuttukları tüyleri midelerinde biriktirirler. Bu tüyleri rahatça dışarı atabilmeleri için evde her zaman taze kedi çimi bulundurulmalıdır.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

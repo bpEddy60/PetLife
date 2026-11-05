@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kedi, köpek, tavşan, kuş ve balıklar için gerekli aşı ve koruyucu sağlık takvimi - PetLife.">
+  <title>Aşı Listesi ve Sağlık Takvimi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+
+<!-- ========== ANA İÇERİK BAŞLANGIÇ ========== -->
+<!-- container: İçeriği ortalayan Bootstrap sınıfı -->
+<!-- my-5: Üstten ve alttan margin (boşluk) -->
+<div class="container my-5">
+
+  <!-- ===== SAYFA BAŞLIĞI ===== -->
+  <!-- text-center: Metni ortalar -->
+  <!-- mb-5: Alttan boşluk -->
+  <div class="text-center mb-5">
+    <!-- fw-bold: Kalın yazı, text-dark: Koyu renk -->
+    <h1 class="fw-bold text-dark">💉 Aşı Listesi ve Koruyucu Sağlık Takvimi</h1>
+    <!-- text-muted: Gri ton, lead: Büyük ve okunaklı metin -->
+    <p class="text-muted lead">Evcil dostlarımızın hayatını kurtaran düzenli aşı ve parazit rutinlerinin özeti.</p>
+  </div>
+
+  <!-- ===== TABLO KARTI ===== -->
+  <!-- card: Bootstrap kart bileşeni -->
+  <!-- p-4: Her taraftan iç boşluk -->
+  <!-- shadow-sm: Hafif gölge -->
+  <!-- border-0: Kenarlık yok -->
+  <!-- bg-white: Beyaz arka plan -->
+  <div class="card p-4 shadow-sm border-0 bg-white">
+    <!-- table-responsive: Tablonun mobilde yatay kaydırılabilir olmasını sağlar -->
+    <div class="table-responsive">
+      <!-- table: Bootstrap tablo sınıfı -->
+      <!-- table-hover: Satır üzerine gelince renk değişir -->
+      <!-- align-middle: Hücre içeriğini dikeyde ortalar -->
+      <!-- mb-0: Alttan margin yok -->
+      <table class="table table-hover align-middle mb-0">
+        <!-- Tablo başlığı, table-success: Yeşil arka plan -->
+        <thead class="table-success">
+          <tr>
+            <th scope="col">Evcil Dostumuz</th>
+            <th scope="col">Gerekli Aşı / Sağlık Koruması</th>
+            <!-- text-end: Sağa hizala -->
+            <th scope="col" class="text-end">Sıklık</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold">🐱 Kedi</td>
+            <td>Karma, Kuduz, Lösemi Aşısı</td>
+            <!-- text-success: Yeşil yazı, fw-bold: Kalın -->
+            <td class="text-end text-success fw-bold">Yıllık</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">🐶 Köpek</td>
+            <td>Karma, Kuduz, Bronchine, Corona</td>
+            <td class="text-end text-success fw-bold">Yıllık</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">🐰 Tavşan</td>
+            <td>RHD (Kanamalı Hastalık Aşısı)</td>
+            <td class="text-end text-success fw-bold">6 Ayda Bir</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">🦜 Kuş</td>
+            <td>İç ve Dış Parazit Sprey/Damla Konforu</td>
+            <td class="text-end text-success fw-bold">3 Ayda Bir</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">🐠 Balık</td>
+            <td>Su Düzenleyici ve Mantar Önleyici Destek</td>
+            <td class="text-end text-success fw-bold">Su Değişiminde</td>
+          </tr>
+          <!-- table-warning: Sarımsı arka plan (öne çıkarmak için) -->
+          <tr class="table-warning">
+            <td class="fw-bold">💉 Rutin Koruma</td>
+            <td>Tüylü Canlılar İçin İç-Dış Parazit Uygulaması</td>
+            <td class="text-end text-success fw-bold">2-3 Ayda Bir</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== BİLGİ UYARI KUTUSU ===== -->
+  <!-- alert alert-warning: Sarı uyarı kutusu -->
+  <!-- mt-4: Üstten boşluk -->
+  <div class="alert alert-warning border-0 shadow-sm mt-4" role="alert">
+    <!-- alert-heading: Uyarı başlığı stili -->
+    <h6 class="alert-heading fw-bold">💡 Altın İpucu: Aşı Takvimi Kişiye Özeldir</h6>
+    <!-- mb-0: Alttan boşluk yok, small: Küçük metin -->
+    <p class="mb-0 small">Bu tablo genel bir rehberdir. Dostunuzun yaşı, sağlık durumu ve yaşam koşullarına göre aşı takvimi veteriner hekiminiz tarafından kişiselleştirilmelidir. Aşıları asla aksatmayın.</p>
+  </div>
+
+  <!-- ===== ALTTAKİ BUTON ===== -->
+  <!-- text-center: Ortala, mt-4: Üstten boşluk -->
+  <div class="text-center mt-4">
+    <!-- btn btn-success: Yeşil buton, rounded-pill: Yuvarlak, px-4: Yatay boşluk -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4">🏠 Ana Sayfaya Dön</a>
+  </div>
+
+</div>
+<!-- ========== ANA İÇERİK BİTİŞ ========== -->
+
+<!-- Bootstrap JavaScript (dropdown, modal gibi bileşenler için gerekli) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

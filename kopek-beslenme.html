@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Köpek Beslenme Rehberi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">🍖 Köpek Beslenme Rehberi</h1>
+    <p class="text-muted lead">Dostunuzun yaşına, kilosuna ve enerjisine uygun doğru beslenme formülleri ve altın kurallar.</p>
+  </div>
+
+  <!-- Yaş Gruplarına Göre Beslenme -->
+  <h3 class="fw-bold mb-4 text-secondary">🍼 Dönemsel İhtiyaçlar</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <!-- Yavru Köpek -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-success">Yavru Dönemi (0-12 Ay)</h5>
+          <p class="card-text text-muted small">Büyüme evresinde oldukları için yüksek protein, kalsiyum ve yağ içeren özel yavru (puppy) mamaları ile beslenmelidirler. Sütten kesildikten sonra kas ve kemik gelişimini desteklemek için günde 3-4 öğün şeklinde beslenmeleri idealdir.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Yetişkin Köpek -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-info">Yetişkin Dönemi (1-7 Yaş)</h5>
+          <p class="card-text text-muted small">Enerji seviyelerini koruyacak ve kilo kontrolü sağlayacak dengeli mamalar tercih edilmelidir. Irkın büyüklüğüne ve günlük hareket seviyesine göre günde 2 öğün besleme (sabah ve akşam) sindirim sistemi sağlığı için en doğrusudur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Yaşlı Köpek -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-primary">Yaşlı Dönemi (7+ Yaş)</h5>
+          <p class="card-text text-muted small">Hareketsizlik nedeniyle bu dönemde kilo almaya yatkın olurlar. Eklem sağlığını destekleyen (glukozamin içerikli), sindirimi kolay ve kalori oranı biraz daha düşük yaşlı (senior) mamalarına geçiş yapılmalıdır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Tehlikeli Yiyecekler Listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-danger mb-4">🚨 Asla Verilmemesi Gerekenler</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0 px-0 text-muted small">❌ <strong>Çikolata ve Kafein:</strong> İçerdikleri teobromin maddesi nedeniyle köpeklerin kalp ritmini bozar ve sinir sistemine ciddi zarar verir, ölümcüldür.</li>
+          <li class="list-group-item border-0 px-0 text-muted small">❌ <strong>Soğan ve Sarımsak:</strong> Köpeklerin alyuvarlarını (kırmızı kan hücrelerini) parçalayarak zamanla ciddi ve ölümcül kansızlığa (anemi) yol açar.</li>
+          <li class="list-group-item border-0 px-0 text-muted small">❌ <strong>Üzüm ve Kuru Üzüm:</strong> Köpeklerin metabolizması bunu çözemez. Çok küçük miktarlarda tüketildiğinde bile ani böbrek yetmezliğine neden olur.</li>
+          <li class="list-group-item border-0 px-0 text-muted small">❌ <strong>Pişmiş Kemikler:</strong> Özellikle pişmiş tavuk kemikleri çok kolay kırılır ve sivrileşir; köpeğin mide ve bağırsak duvarını delebilir.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Doğru Besleme Tüyoları -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">💡 Sağlıklı Besleme İpuçları</h4>
+        <p class="text-muted small">📊 <strong class="text-dark">Ölçülü Besleme:</strong> Köpeğinize mamanın arkasındaki kilo tablosuna göre ölçekle mama verin. Önünde sürekli dolu duran mama kabı, köpeklerde obeziteye ve eklem rahatsızlıklarına davetiye çıkarır.</p>
+        <p class="text-muted small">💧 <strong class="text-dark">Taze Su İhtiyacı:</strong> Köpeklerin kuru mama tüketirken böbreklerinin yorulmaması ve susuz kalmamaları için her zaman ulaşabilecekleri derin ve temiz su kapları bulundurulmalıdır.</p>
+        <p class="text-muted small">🍖 <strong class="text-dark">Ödül Maması Sınırı:</strong> Eğitimlerde veya gün içinde verdiğiniz ödül mamaları ile ev atıştırmalıkları, köpeğinizin günlük alması gereken toplam kalori miktarının %10'unu asla geçmemelidir.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

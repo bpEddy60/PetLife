@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Köpek Davranış Rehberi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">🐕 Köpek Davranışları ve Beden Dili</h1>
+    <p class="text-muted lead">Sadık dostunuzun hareketlerinden havlama tonlarına kadar size anlatmak istediği gizemli dünyası.</p>
+  </div>
+
+  <!-- ŞABLON 1: Beden Dili Kartları -->
+  <h3 class="fw-bold mb-4 text-secondary">🧠 Beden Dili Ne Anlatıyor?</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <!-- Davranış 1 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-success">👋 Kuyruk Sallama</h5>
+          <p class="card-text text-muted">Sanılanın aksine her kuyruk sallama mutluluk demek değildir. Gövde gevşek ve kuyruk geniş açıyla sallanıyorsa dost canlısıdır. Ancak dik ve aşırı sert sallanan bir kuyruk gerginlik belirtisi olabilir.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Davranış 2 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-info">🙇‍♂️ Oyun Daveti</h5>
+          <p class="card-text text-muted">Köpeğiniz ön bacaklarını ve göğsünü tamamen yere uzatıp kalçasını havaya dikiyorsa, bu "Hadi benimle oyna, enerjim çok yüksek ve sana zarar vermeyeceğim" anlamına gelen neşeli bir davettir.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Davranış 3 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-primary">🥱 Esneme ve Yalanma</h5>
+          <p class="card-text text-muted">Köpekler sadece uykuları geldiğinde esnemezler. Ortamda yabancı bir ses veya baskı hissettiklerinde, kendilerini sakinleştirmek ve streste olduklarını belirtmek için peş peşe esnerler.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- ŞABLON 2: Köpeklerin Havlama Nedenleri Check-listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100">
+        <h4 class="fw-bold text-dark mb-4">🔊 Köpekler Neden Havlar?</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🧱 <strong>Bölge Koruma ve Alarm:</strong> Evin etrafında yabancı bir ses duyduğunda ailesini uyarmak için.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🥺 <strong>Can Sıkıntısı ve Yalnızlık:</strong> Gün boyu evde yalnız kalan veya ilgisiz kalan köpeklerin ağlama/havlama seansları.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🎉 <strong>Heyecan ve Selamlama:</strong> Siz eve geldiğinizde ya da oyun oynarken mutluluktan patlayan kısa havlamalar.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🦴 <strong>Dikkat Çekme İsteyi:</strong> Elinizdeki yiyeceği veya oyuncağı almak için gözünüzün içine bakarak havlama.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> ⚡ <strong>Korku ve Kaygı:</strong> Gök gürültüsü, havai fişek gibi durumlarda kendini koruma içgüdüsü.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ŞABLON 3: Davranış Sorunlarında Doğru Bilinen Yanlışlar -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Davranışlarda Doğru Bilinen Yanlışlar</h4>
+        
+        <!-- Yanlış 1 -->
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: "Eşyaları bizi cezalandırmak veya intikam için kemiriyor"</h6>
+          <p class="mb-0 small">Köpeklerde intikam duygusu yoktur. Ayakkabı veya koltuk kemirmelerinin tek sebebi ya diş çıkarma ağrısıdır ya da gün içinde atamadığı aşırı **enerji birikmesidir**.</p>
+        </div>
+
+        <!-- Yanlış 2 -->
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: Havlayana Bağırmayın</h6>
+          <p class="mb-0 small text-dark">Köpeğiniz havladığında ona "Sus!" diye bağırmak işe yaramaz. Köpek bunu "Harika, sahibim de benimle birlikte havlayıp eşlik ediyor" olarak algılar. En doğrusu sırtınızı dönüp susmasını beklemektir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

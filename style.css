@@ -1,0 +1,73 @@
+/* --- ARKA PLAN AYARI --- */
+body {
+    /* Arka plana pati resmini ekler ve üzerine okunması için hafif beyazlık verir */
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+                url('pati.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
+    background-color: #f4f9f4;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* --- MENÜ (NAVBAR) AYARLARI --- */
+.navbar {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    background: rgba(255, 255, 255, 0.7) !important; 
+    backdrop-filter: blur(10px);  
+    padding: 12px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #2ecc71 !important; 
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.navbar-nav .nav-link {
+    color: #2c3e50 !important; 
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #16a085 !important;
+    background-color: #e8f8f5; 
+    border-radius: 50px;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #2ecc71 !important;
+    color: #ffffff !important;           
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 8px 20px !important;
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3); 
+}
+
+/* --- KARTLAR (KUTULAR) İÇİN EKSTRA GÖLGE --- */
+.card {
+    border-radius: 12px;
+}
+
+/* --- CİNSLER SAYFASI GÖRSEL AYARLARI (Bozulmasın diye) --- */
+.cins-img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+.cins-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cins-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12) !important;
+}

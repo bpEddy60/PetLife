@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Köpek Eğitim Rehberi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-light">
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">🎓 Köpek Eğitim Rehberi</h1>
+    <p class="text-muted lead">Dostunuzla aranızdaki bağı güçlendirecek, pozitif yaklaşıma dayalı temel eğitim teknikleri.</p>
+  </div>
+
+  <!-- ŞABLON 1: Eğitim Rutinleri Kartları -->
+  <h3 class="fw-bold mb-4 text-secondary">🗓️ Eğitim Aşamaları</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <!-- 1. Aşama -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-success">🍼 1. Ev ve Tuvalet</h5>
+          <p class="card-text text-muted">Yavru köpekler uyandıktan ve yemekten sonra hemen tuvalete ihtiyaç duyar. Onu her gün aynı saatlerde pede veya dışarı yönlendirip, doğru yere yaptığında ödüllendirmelisiniz.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 2. Aşama -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-info">🎯 2. Temel İtaat</h5>
+          <p class="card-text text-muted">"Otur, Bekle, Gel, Hayır" komutları güvenliği için şarttır. Odaklanma süreleri kısa olduğu için her gün 5-10 dakikalık kısa, eğlenceli ve bol ödüllü seanslar yapmalısınız.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 3. Aşama -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-primary">🐕 3. Tasma & Sosyal</h5>
+          <p class="card-text text-muted">Tasmayı çekiştirdiğinde yürümeyi durdurup gevşemesini bekleyin. Aşıları bittikten sonra ise onu farklı insanlarla ve çevreyle tanıştırarak sosyalleştirin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- ŞABLON 2: Eğitim İçin Gerekli Malzemeler Check-listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100">
+        <h4 class="fw-bold text-dark mb-4">🎒 Eğitim İçin Temel İhtiyaçlar</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🍖 <strong>Yüksek Motivasyonlu Ödül Maması:</strong> Normal mamasından farklı, küçük ve lezzetli ödüller.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 👜 <strong>Ödül Maması Bel Çantası:</strong> Eğitim sırasında ödülü saniyeler içinde (doğru anda) verebilmek için.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 📏 <strong>Uzun Eğitim Tasması:</strong> "Gel" ve "Bekle" komutlarını güvenli mesafeden çalışabilmek için 5-10 metrelik tasmalar.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🧻 <strong>Çiş Alıştırma Pedi & Spreyi:</strong> Ev içi tuvalet eğitiminde sınırları belirlemek için yardımcı ürünler.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🔔 <strong>Clicker (İsteğe Bağlı):</strong> Doğru davranışı tam o saniyede köpeğe çıt sesiyle işaretlemek için harika bir araç.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ŞABLON 3: Eğitimde Doğru Bilinen Yanlışlar -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Eğitimde Doğru Bilinen Yanlışlar</h4>
+        
+        <!-- Yanlış 1 -->
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: "Hata yaptığında burnunu çişe sürtmek veya bağırmak"</h6>
+          <p class="mb-0 small">Köpekler geçmiş zaman algısıyla bağ kuramazlar. Bu ceza yöntemi ona tuvaleti öğretmez; sadece sizden korkmasına ve çişini evde koltuk arkalarına gizlice yapmasına neden olur.</p>
+        </div>
+
+        <!-- Yanlış 2 -->
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: İstikrar Ailede Başlar</h6>
+          <p class="mb-0 small text-dark">Eğitimde evdeki herkes ortak dili konuşmalıdır. Bir aile üyesinin "Yasak" diyerek koltuktan indirdiği köpeğe bir diğeri kucağına alıp izin verirse köpeğin kafası karışır ve eğitim başarısız olur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

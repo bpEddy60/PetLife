@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tavşan Cinsleri Ansiklopedisi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">👑 Tavşan Cinsleri Ansiklopedisi</h1>
+    <p class="text-muted lead">Boyutları, kulak yapıları ve ipeksi kürk özellikleriyle en popüler evcil tavşan ırklarının dünyası.</p>
+  </div>
+
+  <!-- ŞABLON 1: Kategori Sekmeleri (Nav-Pills) -->
+  <ul class="nav nav-pills justify-content-center mb-5 shadow-sm p-2 bg-white rounded-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active me-2" id="pills-kucuk-tab" data-bs-toggle="pill" data-bs-target="#pills-kucuk" type="button" role="tab">🐇 Cüce & Sarkık Kulaklılar</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link me-2" id="pills-pofuduk-tab" data-bs-toggle="pill" data-bs-target="#pills-pofuduk" type="button" role="tab">☁️ Uzun Tüylü & Pofuduklar</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-buyuk-tab" data-bs-toggle="pill" data-bs-target="#pills-buyuk" type="button" role="tab">🥕 Asil & Büyük Irklar</button>
+    </li>
+  </ul>
+
+  <!-- Sekme İçerikleri (Tab Content) -->
+  <div class="tab-content" id="pills-tabContent">
+    
+    <!-- 1. SEKME: CÜCE & SARKIK KULAKLILAR -->
+    <div class="tab-pane fade show active" id="pills-kucuk" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Hollanda Lop -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="HollandaLopTavsanı.jpg" class="card-img-top cins-img" alt="Hollanda Lop" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Hollanda Lop Tavşanı</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Küçük (Cüce) <br><strong>Karakter:</strong> Uysal, oyuncu, sosyal. Aşağıya doğru sarkan uzun kulakları ve basık yüz hatlarıyla evde bakımı en popüler tavşan ırkıdır.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Netherland Dwarf -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="HollandaCüce Tavsanı.webp" class="card-img-top cins-img" alt="Netherland Dwarf" height="300" width="50">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Hollanda Cüce Tavşanı</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Çok Küçük (Minyatür) <br><strong>Karakter:</strong> Meraklı, enerjik, biraz ürkek. Dünyanın en küçük tavşan ırklarından biridir. Kulakları kısadır ve hep dik durur.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Mini Rex -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="MiniRex.jpg" class="card-img-top cins-img" alt="Mini Rex" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Mini Rex</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Küçük <br><strong>Karakter:</strong> Cana yakın, sakin, akıllı. Kadifeyi andıran, pürüzsüz ve dökülmeyen kürk yapısıyla bilinir. Dokunması inanılmaz yumuşaktır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. SEKME: UZUN TÜYLÜ & POFUDUKLAR -->
+    <div class="tab-pane fade" id="pills-pofuduk" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Ankara Tavşanı -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="AnkaraTavsanı(Angora).webp" class="card-img-top cins-img" alt="Ankara Tavşanı" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-info">Ankara Tavşanı (Angora)</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Orta / Büyük <br><strong>Karakter:</strong> Sakin, uysal, sevdiren. Tüm dünyada "Angora" olarak bilinen, yün gibi uzayan bembeyaz tüylere sahip, çok yoğun tarama ve bakım isteyen asil bir yerli ırktır.</p>
+            </div>
+          </div>
+        </div>
+        <!--- Jersey Wooly -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="JerseyWooly.jpg" class="card-img-top cins-img" alt="Jersey Wooly" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-info">Jersey Wooly</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Mini Pofuduk <br>Cüce boyutuyla Angora yününü birleştiren, tüyleri kolayca keçeleşmeyen sevecen bir kucak tavşanıdır.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Aslanbaş -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="Aslanbas(Lionhead).jpg" class="card-img-top cins-img" alt="Aslanbaş Tavşanı" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-info">Aslanbaş (Lionhead)</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Küçük <br><strong>Karakter:</strong> Sevecen, ilgi seven, zeki. Başının etrafında tıpkı bir aslanın yelesini andıran yoğun ve pofuduk tüyleri vardır. Ev ortamına çok çabuk adapte olur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. SEKME: ASİL & BÜYÜK IRLAR -->
+    <div class="tab-pane fade" id="pills-buyuk" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Flandre Dev Tavşanı -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="FlandreDevi(Flemish Giant).jpg" class="card-img-top cins-img" alt="Flandre Dev Tavşanı" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary">Flandre Devi (Flemish Giant)</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Çok Büyük (Dev) <br><strong>Karakter:</strong> Nazik, aşırı sakin, özgüvenli. Ağırlıkları 10 kilogramı bulabilen dünyanın en büyük tavşanıdır. Köpek gibi evde serbestçe gezmeyi severler.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kaliforniya Tavşanı -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="KaliforniyaTavşanı.jpg" class="card-img-top cins-img" alt="Kaliforniya Tavşanı" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary">Kaliforniya Tavşanı</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Büyük <br>Gövdesi bembeyazken; kulakları, burnu, kuyruğu ve patileri simsiyah olan çok asil görünüşlü bir dev ırktır.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Yeni Zelanda Tavşanı -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="YeniZelandaTavsanı.webp" class="card-img-top cins-img" alt="Yeni Zelanda Tavşanı" height="300" width="300">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary">Yeni Zelanda Tavşanı</h5>
+              <p class="text-muted small mb-0"><strong>Boyut:</strong> Büyük <br><strong>Karakter:</strong> Akıllı, uysal, eğitilebilir. Genellikle kırmızı gözleri ve bembeyaz kürkleriyle tanınırlar. Büyük boyutlarına rağmen oldukça sevecen ve uysaldırlar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Sayfa Altındaki Şablon Bölümleri -->
+  <div class="row mt-5">
+    <!-- ŞABLON 2: Doğru Tavşan Seçimi Check-listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100">
+        <h4 class="fw-bold text-dark mb-4">🏠 Kendiniz İçin Doğru Irkı Nasıl Seçersiniz?</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🏢 <strong>Apartman ve Alan Kısıtı:</strong> Eviniz darsa Hollanda Lop veya Cüce tavşanlar az yer kapladıkları için daha uygundur.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🧼 <strong>Tüy Bakımına Ayıracağınız Zaman:</strong> Ankara Tavşanı ve Aslanbaş gibi uzun tüylü ırklar her gün taranmazsa tüyleri düğüm olur.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🧸 <strong>Karakter ve Çocuklarla Uyum:</strong> Hollanda Lop ve Mini Rex ırkları, minyatür cüce tavşanlara göre çok daha uysaldır ve kendilerini sevdirmeyi severler.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ŞABLON 3: Tavşan Cinsleri Hakkında Doğru Bilinen Yanlışlar -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Irklar Hakkında Doğru Bilinen Yanlışlar</h4>
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: "Petshoplarda satılan tüm küçük tavşanlar ömür boyu cüce kalır"</h6>
+          <p class="mb-0 small">Bu en büyük yanılgılardan biridir. Çoğu zaman henüz sütten yeni kesilmiş büyük ırk yavruları "cüce tavşan" diye satılır ve birkaç ay içinde devasa boyutlara ulaşırlar. Gerçek bir cüce ırkın kulakları ve yüz yapısı bebekliğinden itibaren çok farklıdır.</p>
+        </div>
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: Kırmızı Gözler Hastalık Değildir</h6>
+          <p class="mb-0 small text-dark">Yeni Zelanda gibi bazı beyaz ırk tavşanların gözlerinin kırmızı olması bir hastalık veya körlük belirtisi değildir. Bu durum tamamen **Albinizm** ile alakalıdır ve ışığı yansıttığı için gözleri kırmızı görünür; tıpkı diğer tavşanlar gibi mükemmel görürler.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

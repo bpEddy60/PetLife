@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akvaryum Tasarımı ve Düzeni | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">🌿 Akvaryum Düzeni ve Sualtı Tasarımı</h1>
+    <p class="text-muted lead">Doğal bir ekosistem yaratın; derinlik algısı oluşturan taban kurulumu, bitki yerleşimi ve balıklar için güvenli dekorasyon sırları.</p>
+  </div>
+
+  <!-- ŞABLON 1: Derinlik Algısı İçin Üçlü Plan Yapısı -->
+  <h3 class="fw-bold mb-4 text-secondary">📐 Katmanlı Tasarım Kuralları (Foreground, Midground, Background)</h3>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <!-- Ön Plan (Foreground) -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-success">🌱 1. Ön Plan (Küçük Boyut)</h5>
+          <p class="card-text text-muted small">Akvaryumun ön camına yakın olan kısımdır. Görüşü kapatmamak için buraya sadece kısa boylu taban bitkileri (Zemin kaplama / çim bitkileri), küçük düz kaya parçaları yerleştirilir. Kum kalınlığı önde daha ince tutularak arkaya doğru yükseltilmelidir.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Orta Plan (Midground) -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-info">🪵 2. Orta Plan (Odak Noktası)</h5>
+          <p class="card-text text-muted small">Akvaryumun tam merkezi ve tasarımın kalbidir. Dikkat çekici doğal kütükler (Yati veya Mangrow kökleri), büyük kaya oluşumları ve orta boylu bitkiler (Anubias, Java Fern) buraya konumlandırılır. Balıkların saklanma alanları burada oluşturulur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Arka Plan (Background) -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title fw-bold text-primary">🌿 3. Arka Plan (Yüksek Boyut)</h5>
+          <p class="card-text text-muted small">Filtre borularını, ısıtıcıyı ve kabloları gizlemek için kullanılan arka bölümdür. Hızlı büyüyen, uzun boylu ve saz teli benzeri gövdeli bitkiler (Saz, Elodea, Limon bitkisi) arkaya dikilir. Akvaryumun arkasına yapıştırılan düz siyah veya buzlu cam folyolar derinliği iki katına çıkarır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- ŞABLON 2: Kusursuz Akvaryum Tasarım Check-listesi -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100">
+        <h4 class="fw-bold text-dark mb-4">🔮 Sualtı Peyzajı (Aquascaping) İpuçları</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 📐 <strong>Altın Oran Kuralı:</strong> Ana dekorunuzu (en büyük kök veya kaya) akvaryumun tam ortasına koymayın. Hafifçe sağa veya sola kaydırarak yerleştirmek gözü yormayan, çok daha doğal bir estetik algısı yaratır.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🧪 <strong>Kayaların Salınım Testi:</strong> Doğadan topladığınız taşları akvaryuma koymadan önce üzerine birkaç damla tuz ruhu veya sirke damlatın. Eğer köpürme yapıyorsa, o taş kireçlidir ve akvaryum suyunun sertliğini (pH) çok yükseltir; kullanılmamalıdır.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🐠 <strong>Yüzme Alanı Bırakma:</strong> Tasarımı yaparken akvaryumu dekorla tamamen boğmayın. Balıkların rahatça sürü halinde gezebileceği açık yüzme koridorları ve taban alanları bırakmaya özen gösterin.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ŞABLON 3: Dekorasyonda Doğru Bilinen Yanlışlar -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Tasarımda Doğru Bilinen Yanlışlar</h4>
+        
+        <!-- Yanlış 1 -->
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: "Renkli çakıl taşları ve plastik bitkiler akvaryumu neşelendirir"</h6>
+          <p class="mb-0 small">Renkli yapay kumlar ve plastik dekorlar zamanla suya kimyasal boya salgılar ve balıkları yavaş yavaş zehirler. Ayrıca yapay bitkilerin sert plastik yaprakları balıkların kuyruklarını yırtar. Akvaryumda sadece doğal kumlar (dere kumu, kuvars) ve canlı bitkiler kullanılmalıdır.</p>
+        </div>
+
+        <!-- Yanlış 2 -->
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: Yapay Objelerden Kaçının</h6>
+          <p class="mb-0 small text-dark">Batık gemiler, yapay deniz kızları veya plastik şatolar sualtı doğallığını tamamen yok eder. Unutmayın, en profesyonel akvaryum, doğadaki bir nehir veya göl yatağının kopyası olan akvaryumdur. Doğal ahşap ve gerçek kayalar her zaman en sağlıklı seçimdir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

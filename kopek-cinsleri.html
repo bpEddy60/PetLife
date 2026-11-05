@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Köpek Cinsleri Ansiklopedisi | PetLife</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Kedi sayfasıyla aynı CSS dosyasını bağlıyoruz -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
+<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
+<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
+<!-- shadow-sm: Hafif gölge -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
+  <div class="container">
+    <!-- Ana sayfaya dönüş butonu -->
+    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
+    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
+    <!-- px-4: Yatay iç boşluk (padding) -->
+    <!-- fw-bold: Kalın yazı -->
+    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  </div>
+</nav>
+<!-- ========== NAVBAR BİTİŞ ========== -->
+<div class="container my-5">
+  <!-- Sayfa Başlığı -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold text-dark">👑 Köpek Cinsleri Ansiklopedisi</h1>
+    <p class="text-muted lead">Dünyadaki tüm popüler köpek ırklarının görselleri, kökenleri ve karakter özellikleri.</p>
+  </div>
+
+  <!-- ŞABLON 1: Kategori Sekmeleri (Nav-Pills) - Kedi Sayfasıyla Birebir Aynı Düzen -->
+  <ul class="nav nav-pills justify-content-center mb-5 shadow-sm p-2 bg-white rounded-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active me-2" id="pills-kucuk-tab" data-bs-toggle="pill" data-bs-target="#pills-kucuk" type="button" role="tab">🐶 Küçük & Evcil Irklar</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link me-2" id="pills-buyuk-tab" data-bs-toggle="pill" data-bs-target="#pills-buyuk" type="button" role="tab">🦁 Büyük & Koruyucu Irklar</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link me-2" id="pills-zeki-tab" data-bs-toggle="pill" data-bs-target="#pills-zeki" type="button" role="tab">🎓 Akıllı & Eğitilebilirler</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-oyuncu-tab" data-bs-toggle="pill" data-bs-target="#pills-oyuncu" type="button" role="tab">⚡ Enerjik & Oyuncu Irklar</button>
+    </li>
+  </ul>
+
+  <!-- Sekme İçerikleri (Tab Content) -->
+  <div class="tab-content" id="pills-tabContent">
+    
+    <!-- 1. SEKME: KÜÇÜK & EVCİL IRLAR -->
+    <div class="tab-pane fade show active" id="pills-kucuk" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Pomeranian -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="PomeranianBoo.webp" class="card-img-top cins-img" alt="Pomeranian">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Pomeranian Boo</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> Almanya <br><strong>Karakter:</strong> Canlı, neşeli, zeki. Pofuduk tüyleriyle tam bir apartman köpeğidir.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Pug -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="Pug.jpg" class="card-img-top cins-img" alt="Pug">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Pug</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> Çin <br><strong>Karakter:</strong> Sevecen, uysal, oyuncu. Çok fazla egzersiz ihtiyacı duymaz.</p>
+            </div>
+          </div>
+        </div>
+        <!-- French Bulldog -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="FransizBulldog.jpg" class="card-img-top cins-img" alt="French Bulldog">
+            <div class="card-body">
+              <h5 class="fw-bold text-success">Fransız Bulldog</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> Fransa <br><strong>Karakter:</strong> Sabırlı, sosyal, sadık. Ev ortamında çok sessiz ve uyumludur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. SEKME: BÜYÜK & KORUYUCU IRLAR -->
+    <div class="tab-pane fade" id="pills-buyuk" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Kangal -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="SivasKangali.jpg" class="card-img-top cins-img" alt="Kangal">
+            <div class="card-body">
+              <h5 class="fw-bold text-info">Sivas Kangalı</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> Türkiye <br><strong>Karakter:</strong> Koruyucu, cesur, sadık. Çocuklara karşı inanılmaz naziktir.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Rottweiler -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="Rottweiler.webp" class="card-img-top cins-img" alt="Rottweiler">
+            <div class="card-body">
+              <h5 class="fw-bold text-info">Rottweiler</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> Almanya <br><strong>Karakter:</strong> Özgüvenli, ciddi, korumacı. İtaatkar ve güçlü bir koruyucudur.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Husky -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="Husky.webp" class="card-img-top cins-img" alt="Husky">
+            <div class="card-body">
+              <h5 class="fw-bold text-info">Sibirya Kurdu (Husky)</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> Rusya <br><strong>Karakter:</strong> Bağımsız, enerjik, inatçı. Mavi gözleriyle asil bir hatları vardır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. SEKME: AKILLI & EĞİTİLEBİLİRLER -->
+    <div class="tab-pane fade" id="pills-zeki" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Border Collie -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="BorderCollie.jpg" class="card-img-top cins-img" alt="Border Collie">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary">Border Collie</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> İskoçya <br><strong>Karakter:</strong> Dünyanın en zeki köpeğidir. Komutları saniyeler içinde öğrenir.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Alman Kurdu -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="AlmanÇobanKöpeği.png" class="card-img-top cins-img" alt="Alman Kurdu">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary">Alman Çoban Köpeği</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> Almanya <br><strong>Karakter:</strong> Zeki, sadık, görev odaklı. Arama-kurtarmada ilk tercihtir.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Golden Retriever -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="GoldenRetriever.jpg" class="card-img-top cins-img" alt="Golden Retriever">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary">Golden Retriever</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> İskoçya <br><strong>Karakter:</strong> Çok sevecen, uysal, barışçıl. Tam bir aile dostudur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. SEKME: ENERJİK & OYUNCULAR -->
+    <div class="tab-pane fade" id="pills-oyuncu" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Labrador -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="LabradorRetriever.jpg" class="card-img-top cins-img" alt="Labrador">
+            <div class="card-body">
+              <h5 class="fw-bold text-warning">Labrador Retriever</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> Kanada <br><strong>Karakter:</strong> Aşırı oyuncu, nazik, hareketli. Suyu ve getirme oyunlarını çok sever.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Beagle -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="Beagle.jpg" class="card-img-top cins-img" alt="Beagle">
+            <div class="card-body">
+              <h5 class="fw-bold text-warning">Beagle</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> İngiltere <br><strong>Karakter:</strong> Meraklı, dost canlısı, enerjik. Müthiş bir koku alma yeteneği vardır.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Jack Russell -->
+        <div class="col">
+          <div class="card h-100 shadow-sm cins-card">
+            <img src="JackRussellTerrier.webp" class="card-img-top cins-img" alt="Jack Russell">
+            <div class="card-body">
+              <h5 class="fw-bold text-warning">Jack Russell Terrier</h5>
+              <p class="text-muted small mb-0"><strong>Köken:</strong> İngiltere <br><strong>Karakter:</strong> Korkusuz, hiperaktif, zeki. Gün boyu oyun oynamaya hazırdır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Sayfa Altındaki Şablon Bölümleri (Check-list ve Yanlışlar) Birebir Korundu -->
+  <div class="row mt-5">
+    <!-- ŞABLON 2: Check-list -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100">
+        <h4 class="fw-bold text-dark mb-4">🏠 Kendinize Uygun Cinsi Nasıl Seçersiniz?</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🏢 <strong>Yaşam Alanı Dengesi:</strong> Küçük apartman dairesi için Pug gibi az enerjili ırklar.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> ⏳ <strong>Zaman ve Egzersiz Payı:</strong> Husky veya Border Collie günde en az 1-2 saat koşu ister.
+          </li>
+          <li class="list-group-item d-flex align-items-center border-0 px-0">
+            <input class="form-check-input me-3" type="checkbox" style="transform: scale(1.2);"> 🧼 <strong>Tüy ve Bakım Hassasiyeti:</strong> Yoğun tüy döken ırklar haftada birkaç kez taranmalıdır.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ŞABLON 3: Doğru Bilinen Yanlışlar -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-4 shadow-sm border-0 h-100 bg-white">
+        <h4 class="fw-bold text-dark mb-4">⚠️ Irklar Hakkında Doğru Bilinen Yanlışlar</h4>
+        <div class="alert alert-danger border-0 shadow-sm mb-3" role="alert">
+          <h6 class="alert-heading fw-bold">❌ Yanlış: "Sadece bazı büyük ırklar doğuştan saldırgandır"</h6>
+          <p class="mb-0 small">Hiçbir köpek doğuştan saldırgan değildir. Saldırganlık tamamen yanlış yetiştirilmeden kaynaklanır.</p>
+        </div>
+        <div class="alert alert-warning border-0 shadow-sm" role="alert">
+          <h6 class="alert-heading fw-bold text-dark">💡 Altın İpucu: Boyut Aldatıcı Olabilir</h6>
+          <p class="mb-0 small text-dark">Küçük bir terrier, devasa bir Danua'dan çok daha hareketli ve gürültücü olabilir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
