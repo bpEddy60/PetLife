@@ -12,14 +12,16 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold">🐾 PETLIFE</a>
+    <a class="navbar-brand fw-bold" href="index.html">🐾 PETLIFE</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPetlife">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarPetlife">
       <ul class="navbar-nav ms-auto fw-semibold">
-        <li class="nav-item"></li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Ana Sayfa</a>
+        </li>
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Köpek Rehberi</a>
@@ -64,7 +66,7 @@
             <li><a class="dropdown-item" href="tavsan-beslenme.html">Beslenme</a></li>
             <li><a class="dropdown-item" href="tavsan-egitim.html">Eğitim</a></li>
             <li><a class="dropdown-item" href="tavsan-davranis.html">Davranış</a></li>
-            <li><a class="dropdown-item" href="tavsan-sagligi.html">Sağlık</a></li>
+            <li><a class="dropdown-item" href="tavsan-saglik.html">Sağlık</a></li>
             <li><a class="dropdown-item" href="tavsan-cinsleri.html">Cinsler</a></li>
           </ul>
         </li>
@@ -73,7 +75,7 @@
           <a class="nav-link dropdown-toggle" href="#" id="fishDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Balık Rehberi</a>
           <ul class="dropdown-menu" aria-labelledby="fishDropdown">
             <li><a class="dropdown-item" href="balik-bakim.html">Bakım</a></li>
-            <li><a class="dropdown-item" href="balik-besleme.html">Beslenme</a></li>
+            <li><a class="dropdown-item" href="balik-beslenme.html">Beslenme</a></li>
             <li><a class="dropdown-item" href="akvaryum-duzeni.html">Akvaryum Düzeni</a></li>
             <li><a class="dropdown-item" href="balik-sagligi.html">Sağlık</a></li>
             <li><a class="dropdown-item" href="balik-cinsleri.html">Cinsler</a></li>
@@ -114,13 +116,11 @@
       </div>
     </div>
 
-        <div class="col-lg-5">
-      <!-- Mavi arka plan silindi, bg-white eklendi. text-dark ile yazılar koyu yapıldı -->
+    <div class="col-lg-5">
       <div class="p-4 rounded-4 shadow-sm bg-white h-100">
         <h4 class="fw-bold mb-2 text-dark">📋 Kritik Aşı Takvimi Hatırlatıcısı</h4>
         <p class="text-muted small mb-4">Hekimlerin kırmızı çizgisi: Dostlarımızın hayatını kurtaran düzenli aşı rutinleri.</p>
 
-        <!-- Tablodaki text-white ve opacity kaldırıldı -->
         <table class="table table-borderless table-sm align-middle">
           <thead>
             <tr class="border-bottom border-secondary">
@@ -130,7 +130,6 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Sarı yazılar (text-warning) yeşil (text-success) yapıldı -->
             <tr><td class="fw-bold py-2">🐱 Kedi</td><td>Karma, Kuduz, Lösemi (FeLV)</td><td class="text-end text-success fw-bold">Yıllık Tekrar</td></tr>
             <tr><td class="fw-bold py-2">🐶 Köpek</td><td>Karma, Bronchine, Corona, Kuduz</td><td class="text-end text-success fw-bold">Yıllık Tekrar</td></tr>
             <tr><td class="fw-bold py-2">🐰 Tavşan</td><td>RHD (Kanamalı Hastalık Aşısı)</td><td class="text-end text-success fw-bold">6 Ayda Bir</td></tr>
@@ -138,13 +137,14 @@
           </tbody>
         </table>
 
-        <!-- Alttaki uyarı kutusu beyaz zemine uyarlandı (bg-light ve text-danger kullanıldı) -->
         <div class="mt-4 p-3 rounded-3 bg-light border border-light-subtle">
           <span class="small d-block fw-bold text-danger">⚠️ Veteriner Notu:</span>
           <span class="small text-muted">Parazit uygulamaları sadece dostunuzu değil, evdeki sizin sağlığınızı da korur. İhmal etmeyiniz.</span>
         </div>
       </div>
     </div>
+  </div>
+
   <div class="row mt-5 pt-4">
     <div class="col-md-8 mx-auto">
       <div class="card p-4 shadow-sm border-0 bg-white">
