@@ -76,3 +76,18 @@ body {
 	height:300px;
 	object-fit:cover;/*dikeyde olsa yatayda olsa resmi kutuya eşit sığdır*/
 }
+.card{
+	transition:transform 0.3s ease,box-shadow 0.3s ease;/*0.3 saniye içinde yumuşak bir şekilde hareket etmesini sağlar*/
+}
+.card:hover{
+	transform:translateY(-10px);/*kartı 10 piksel yukarı kaldırır*/
+	box-shadow 0 15px 30px rgba(0,0,0,0.15);/*kartın altına gölge koyar*/
+}
+.card img{
+	transition:transform 0.3s ease;
+	overflow:hidden;
+}
+.card:hover:img{
+	transform:scale(1.05);/*resmi %5 büyültür*/
+}
+	
