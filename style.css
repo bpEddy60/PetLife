@@ -70,7 +70,8 @@ body {
 }
 .card-img-top {
     height: 300px;
-    object-fit: contain;
+    object-fit: contain
+	;
 }
 
 /* --- CİNSLER SAYFASI GÖRSEL AYARLARI --- */
@@ -122,8 +123,11 @@ body {
 }
 
 /* Masaüstü: üzerine gelince açılsın, alt menü yanda çıksın */
-@media (min-width: 992px) {
-    .nav-item.dropdown:hover > .guide-menu { display: block; }
+@media (min-width: 768px) {
+    nav{
+		flex-direction:column;
+	}
+}
 
     .submenu {
         top: 0;
