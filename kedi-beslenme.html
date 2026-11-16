@@ -8,22 +8,104 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
-<!-- ========== NAVBAR BAŞLANGIÇ ========== -->
-<!-- sticky-top: Sayfa kaydırıldığında navbar en üstte sabit kalır -->
-<!-- navbar-dark bg-dark: Koyu arka plan, beyaz metin -->
-<!-- shadow-sm: Hafif gölge -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-  <!-- container: İçeriği ortalar ve sayfa kenarlarından boşluk bırakır -->
-  <div class="container">
-    <!-- Ana sayfaya dönüş butonu -->
-    <!-- btn btn-success: Yeşil buton (her zaman görünür, yazı beyaz) -->
-    <!-- rounded-pill: Butonu tamamen yuvarlak köşeli yapar -->
-    <!-- px-4: Yatay iç boşluk (padding) -->
-    <!-- fw-bold: Kalın yazı -->
-    <a href="index.html" class="btn btn-success rounded-pill px-4 fw-bold">🏠 Ana Sayfa</a>
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold">🐾 PETLIFE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPetlife">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarPetlife">
+      <ul class="navbar-nav mx-auto fw-semibold">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">🏠</a>
+        </li>
+
+        <!-- REHBERLER MENÜSÜ -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="megaGuide" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Rehberler</a>
+
+          <ul class="dropdown-menu guide-menu" aria-labelledby="megaGuide">
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-item submenu-toggle" href="#">🐶 Köpek <span class="arrow">›</span></a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="kopek-bakimi.html">Bakım</a></li>
+                <li><a class="dropdown-item" href="kopek-beslenme.html">Beslenme</a></li>
+                <li><a class="dropdown-item" href="kopek-egitimi.html">Eğitim</a></li>
+                <li><a class="dropdown-item" href="kopek-davranis.html">Davranış</a></li>
+                <li><a class="dropdown-item" href="kopek-cinsleri.html">Cinsler</a></li>
+                <li><a class="dropdown-item" href="kopek-sagligi.html">Sağlık</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-item submenu-toggle" href="#">🐱 Kedi <span class="arrow">›</span></a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="kedi-bakimi.html">Bakım</a></li>
+                <li><a class="dropdown-item" href="kedi-beslenme.html">Beslenme</a></li>
+                <li><a class="dropdown-item" href="kedi-egitimi.html">Eğitim</a></li>
+                <li><a class="dropdown-item" href="kedi-davranis.html">Davranış</a></li>
+                <li><a class="dropdown-item" href="kedi-saglik.html">Sağlık</a></li>
+                <li><a class="dropdown-item" href="kedi-cinsleri.html">Cinsler</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-item submenu-toggle" href="#">🦜 Kuş <span class="arrow">›</span></a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="kus-bakimi.html">Bakım</a></li>
+                <li><a class="dropdown-item" href="kus-beslenme.html">Beslenme</a></li>
+                <li><a class="dropdown-item" href="kus-egitimi.html">Eğitim</a></li>
+                <li><a class="dropdown-item" href="kus-davranis.html">Davranış</a></li>
+                <li><a class="dropdown-item" href="kus-sagligi.html">Sağlık</a></li>
+                <li><a class="dropdown-item" href="kus-cinsleri.html">Cinsler</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-item submenu-toggle" href="#">🐰 Tavşan <span class="arrow">›</span></a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="tavsan-bakimi.html">Bakım</a></li>
+                <li><a class="dropdown-item" href="tavsan-beslenme.html">Beslenme</a></li>
+                <li><a class="dropdown-item" href="tavsan-egitim.html">Eğitim</a></li>
+                <li><a class="dropdown-item" href="tavsan-davranis.html">Davranış</a></li>
+                <li><a class="dropdown-item" href="tavsan-saglik.html">Sağlık</a></li>
+                <li><a class="dropdown-item" href="tavsan-cinsleri.html">Cinsler</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+              <a class="dropdown-item submenu-toggle" href="#">🐠 Balık <span class="arrow">›</span></a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="balik-bakim.html">Bakım</a></li>
+                <li><a class="dropdown-item" href="balik-beslenme.html">Beslenme</a></li>
+                <li><a class="dropdown-item" href="akvaryum-duzeni.html">Akvaryum Düzeni</a></li>
+                <li><a class="dropdown-item" href="balik-sagligi.html">Sağlık</a></li>
+                <li><a class="dropdown-item" href="balik-cinsleri.html">Cinsler</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+        <!-- /REHBERLER MENÜSÜ -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.google.com/maps/search/veteriner+kliniği" target="_blank" rel="noopener">Yakındaki Veterinerler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="asi-listesi.html">Aşı Listesi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="petShop.html">PetShop</a>
+        </li>
+
+      </ul>
+    </div>
   </div>
 </nav>
-<!-- ========== NAVBAR BİTİŞ ========== -->
 <div class="container my-5">
   <!-- Sayfa Başlığı -->
   <div class="text-center mb-5">
@@ -91,5 +173,5 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+<footer class="bg-dark text-white text-center py-3 mt-5"><p class="mb-0 small">&copy; 2026 🐾 PetLife Bilgi Portalı. Tüm Hakları Saklıdır.</p></footer></body>
 </html>

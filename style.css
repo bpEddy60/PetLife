@@ -1,7 +1,6 @@
 /* --- ARKA PLAN AYARI --- */
 body {
-    /* Arka plana pati resmini ekler ve üzerine okunması için hafif beyazlık verir */
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
                 url('pati.jpg') no-repeat center center fixed !important;
     background-size: cover !important;
     background-color: #f4f9f4;
@@ -15,8 +14,8 @@ body {
     font-family: 'Segoe UI', sans-serif;
     font-size: 16px;
     letter-spacing: 0.5px;
-    background: rgba(255, 255, 255, 0.7) !important; 
-    backdrop-filter: blur(10px);  
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px);
     padding: 12px 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
@@ -25,12 +24,12 @@ body {
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: #2ecc71 !important; 
+    color: #2ecc71 !important;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
 }
 
 .navbar-nav .nav-link {
-    color: #2c3e50 !important; 
+    color: #2c3e50 !important;
     font-weight: 600;
     margin: 0 5px;
     padding: 8px 15px !important;
@@ -39,26 +38,42 @@ body {
 
 .navbar-nav .nav-link:hover {
     color: #16a085 !important;
-    background-color: #e8f8f5; 
+    background-color: #e8f8f5;
     border-radius: 50px;
     transform: translateY(-2px);
 }
 
 .navbar-nav .nav-link.active {
     background-color: #2ecc71 !important;
-    color: #ffffff !important;           
+    color: #ffffff !important;
     border-radius: 50px;
     font-weight: bold;
     padding: 8px 20px !important;
-    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3); 
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
 }
 
-/* --- KARTLAR (KUTULAR) İÇİN EKSTRA GÖLGE --- */
+/* --- KARTLAR --- */
 .card {
     border-radius: 12px;
+    overflow: hidden;   /* büyüyen resim kutudan taşmasın */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.card img {
+    transition: transform 0.3s ease;
+}
+.card:hover img {
+    transform: scale(1.05);
+}
+.card-img-top {
+    height: 300px;
+    object-fit: contain;
 }
 
-/* --- CİNSLER SAYFASI GÖRSEL AYARLARI (Bozulmasın diye) --- */
+/* --- CİNSLER SAYFASI GÖRSEL AYARLARI --- */
 .cins-img {
     object-fit: cover;
     width: 100%;
@@ -72,22 +87,61 @@ body {
     box-shadow: 0 12px 24px rgba(0,0,0,0.12) !important;
 }
 
-.card-img-top{
-	height:300px;
-	object-fit:cover;/*dikeyde olsa yatayda olsa resmi kutuya eşit sığdır*/
+/* ===== REHBERLER MENÜSÜ ===== */
+.guide-menu,
+.submenu {
+    border: 0;
+    border-radius: 14px;
+    padding: .5rem;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
 }
-.card{
-	transition:transform 0.3s ease,box-shadow 0.3s ease;/*0.3 saniye içinde yumuşak bir şekilde hareket etmesini sağlar*/
+
+.guide-menu .dropdown-item {
+    color: #2c3e50;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border-radius: 8px;
 }
-.card:hover{
-	transform:translateY(-10px);/*kartı 10 piksel yukarı kaldırır*/
-	box-shadow 0 15px 30px rgba(0,0,0,0.15);/*kartın altına gölge koyar*/
+.guide-menu .dropdown-item:hover {
+    background: #e8f8f5;
+    color: #16a085;
 }
-.card img{
-	transition:transform 0.3s ease;
-	overflow:hidden;
+
+.dropdown-submenu { position: relative; }
+
+.submenu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.card:hover:img{
-	transform:scale(1.05);/*resmi %5 büyültür*/
+.submenu-toggle .arrow {
+    color: #2ecc71;
+    font-weight: 700;
+    margin-left: 1rem;
 }
-	
+
+/* Masaüstü: üzerine gelince açılsın, alt menü yanda çıksın */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover > .guide-menu { display: block; }
+
+    .submenu {
+        top: 0;
+        left: 100%;
+        margin-top: -.5rem;
+        margin-left: .25rem;
+        min-width: 11rem;
+    }
+    .dropdown-submenu:hover > .submenu { display: block; }
+}
+
+/* Mobil: alt menü, tıklayınca altına açılsın */
+@media (max-width: 991.98px) {
+    .submenu {
+        position: static;
+        box-shadow: none;
+        background: transparent;
+        padding: 0 0 0 1rem;
+    }
+    .submenu-toggle .arrow { transform: rotate(90deg); }
+}
